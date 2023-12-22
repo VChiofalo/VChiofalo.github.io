@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Intégration maquette Figma avec tailwindcss</title>
+
+    <link rel="stylesheet" href="assets\css\main.css">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                leaves : '#AEB798',
+                cream : '#ECEBBD',
+                snow : '#FCFCFC',
+                dark : '#23221E',
+              }
+            }
+          }
+        }
+      </script>  
+      
+      <script src="assets/js/main.js" defer></script>
+      <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-dark w-[90rem] mx-auto my-0">
+    <header>
+        <nav class="flex justify-between w-full">
+            <a href="#"><img src="assets\icones\Property 1=cream.svg" alt="logo"></a>
+            <ul class="flex justify-between w-[588px]">
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Evenements</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+            <div class="flex justify-between w-[183px]">
+                <a href="#"><img src="assets/icones/basket.svg" alt="basket"></a>
+                <a href="#"><img src="assets\icones\icones=profil, Color=cream.svg" alt="user"></a>
+            </div>
+        </nav>
+        <div class="h-[788px] p-2 size-full bgImage">
+            <h1 class="uppercase flex space-y-3 font-bold mt-[194px] ml-[132px] text-[74px]">Une animation de<br/>
+                    texte ici<br/>
+            </h1>         
+            <p class="text-white text-[20px] ml-[132px] mt-[30px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br />
+                 Ipsam dolorum doloremque, numquam magnam, reiciendis odit, tenetur perspiciatis<br />
+                  ut alias perferendis voluptas? Eveniet, dolor optio est officiis delectus<br />
+                   ratione reiciendis saepe!<br/></p>
+            </p>
+            <button class="bg-cream py-[18px] px-[45px] w-[284px] font-bold text-[20px] rounded-none text-black mt-[49px] shadow-[4px_4px_0px_0px] shadow-snow ml-[132px]">Je m'inscris</button>   
+        </div>
+    </header>
+
+    <main>
+        <section class="text-snow" id="event"> 
+            <h2 class="text-center uppercase mb-[3.2rem] mt-[57px]">Titre section 3</h2>
+            <div class="flex mx-auto my-0 justify-around">
+                <figure class="relative shadow-[4px_4px_0px_0px] shadow-snow">
+                    <img src="assets\images\metalhammer2024.png" alt="concert au metal hammer 2024">
+                    <figcaption class="absolute bottom-0 w-full flex justify-between items-center bg-dark bg-opacity-70 h-[8rem] border-solid border border-snow"> 
+                        <div class="ml-[1.5rem]">
+                            <h3>Metal Hammer Paradise 2024</h3>
+                            <p class="italic font-bold text-[0.9rem]">Du 31 juillet au 4 aout 2024</p>
+                        </div>
+                        <a href="#" class="mr-[1.5rem]"><img src="assets\icones\right-cream.svg" alt="icone droite couleur crème"></a>
+                    </figcaption>
+                </figure>
+                <div class="flex flex-wrap justify-around w-1/2 items-baseline">
+                    <figure class="relative mb-[2rem] shadow-[4px_4px_0px_0px] shadow-snow">
+                        <img src="assets\images\fullmetalcruise2024.png" alt="batterie du full metal cruise 2024">
+                        <figcaption class="absolute bottom-0 w-full flex justify-between items-center bg-dark bg-opacity-70 border-solid border border-snow h-[5rem]">
+                            <div class="ml-[1.5rem]">
+                                <h3 class="text-[19px]">Full Metal Cruise 2024</h3>
+                                <p class="italic font-bold text-[0.9rem]">Du 13 juillet au 17 juillet 2024</p>
+                            </div>
+                            <a href="#" class="mr-[1.5rem]"><img src="assets\icones\right-cream.svg" alt="icone droite couleur crème"></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="relative mb-[2rem] shadow-[4px_4px_0px_0px] shadow-snow">
+                        <img src="assets/images/rockenseine2024.png" alt="guitariste du rock en seine 2024">
+                        <figcaption class="absolute bottom-0 w-full flex justify-between items-center bg-dark bg-opacity-70 border-solid border border-snow h-[5rem]"> 
+                            <div class="ml-[1.5rem]">
+                                <h3 class="text-[19px]">Rock en Seine 2024</h3>
+                                <p class="italic font-bold text-[0.9rem]">Du 26 au 28 mai 2024</p>
+                            </div>
+                            <a href="#" class="mr-[1.5rem]"><img src="assets\icones\right-cream.svg" alt="icone droite couleur crème"></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="relative shadow-[4px_4px_0px_0px] shadow-snow">
+                        <img src="assets/images/deatheast2024.png" alt="public du deatheast 2024">
+                        <figcaption class="absolute bottom-0 w-full flex justify-between items-center bg-dark bg-opacity-70 border-solid border border-snow h-[5rem]"> 
+                            <div class="ml-[1.5rem]">
+                                <h3 class="text-[19px]">Deatheast 2024</h3>
+                                <p class="italic font-bold text-[0.9rem]">Du 15 au 18 juin 2024</p>
+                            </div>
+                            <a href="#" class="mr-[1.5rem]"><img src="assets\icones\right-cream.svg" alt="icone droite couleur crème"></a>
+                        </figcaption>
+                    </figure>
+                    <figure class="relative shadow-[4px_4px_0px_0px] shadow-snow">
+                        <img src="assets/images/motocultor2024.png" alt="guitariste du motocultor 2024">
+                        <figcaption class="absolute bottom-0 w-full flex justify-between items-center bg-dark bg-opacity-70 border-solid border border-snow h-[5rem]"> 
+                            <div class="ml-[1.5rem]">
+                                <h3 class="text-[19px]">Motocultor 2024</h3>
+                                <p class="italic font-bold text-[0.9rem]">Du 17 au 20 aout 2024</p>
+                            </div>
+                            <a href="#" class="mr-[1.5rem]"><img src="assets\icones\right-cream.svg" alt="icone droite couleur crème"></a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="w-full flex justify-center"><a href="#" class="px-[2.2rem] py-[0.7rem] bg-cream mt-[3.2rem] mb-[4.6rem] inline-block mx-auto w-[20rem] flex justify-between shadow-[4px_4px_0px_0px] shadow-snow text-dark items-center">Voir les évènements <img src="assets/icones/right_dark.svg" alt="chevron droit noir" class="inline"></a></div>
+        </section>
+        <section class="text-dark bg-leaves pt-[5rem] pb-[4.5rem] text-center" id="partners">
+            <h2 class="mb-[4.2rem] uppercase">Nos disquaires partenaires</h2>
+            <div class="flex justify-around">
+                <img src="assets/icones/left_dark.svg" alt="" id="btnPrev">
+                <div class="overflow-hidden" id="sliderContainer">
+                    <div class="flex justify-start w-[65rem]" id="slider">
+                        <figure class="w-[20rem] shrink-0 mx-[13px]">
+                            <img src="assets/images/disquaire_1.png" alt="premier disquaire" class="w-[20rem] rounded-[20rem]">
+                            <figcaption class="mt-[1.3rem] font-bold text-[1.2rem]">Orléans</figcaption>
+                        </figure>
+                        <figure class="w-[20rem] shrink-0 mx-[13px]">
+                            <img src="assets/images/disquaire_2.png" alt="second disquaire" class="w-[20rem] rounded-[20rem]">
+                            <figcaption class="mt-[1.3rem] font-bold text-[1.2rem]">Orléans</figcaption>
+                        </figure>
+                        <figure class="w-[20rem] shrink-0 mx-[13px]">
+                            <img src="assets/images/disquaire_3.png" alt="troisième disquaire" class="w-[20rem] rounded-[20rem]">
+                            <figcaption class="mt-[1.3rem] font-bold text-[1.2rem]">Orléans</figcaption>
+                        </figure>
+                        <figure class="w-[20rem] shrink-0 mx-[13px]">
+                            <img src="assets/images/disquaire_2.png" alt="second disquaire" class="w-[20rem] rounded-[20rem]">
+                            <figcaption class="mt-[1.3rem] font-bold text-[1.2rem]">Orléans</figcaption>
+                        </figure>
+                        <figure class="w-[20rem] shrink-0 mx-[13px]">
+                            <img src="assets/images/disquaire_1.png" alt="premier disquaire" class="w-[20rem] rounded-[20rem]">
+                            <figcaption class="mt-[1.3rem] font-bold text-[1.2rem]">Orléans</figcaption>
+                        </figure>   
+                    </div>
+                </div>
+                <img src="assets/icones/right_dark.svg" alt="chevron droite couleur noir" id="btnNext">
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-snow">
+        <form class="flex justify-between items-center mt-[2.9rem] px-[9rem]">
+            <label for="mail" class="font-bold w-[250px]">Je m'inscris à la newsletter</label>
+            <div class="flex justify-end items-center w-[1000px]">
+                <input type="email" name="mail" placeholder="Label" id="mail" class="py-[1.1rem] pl-[1.2rem] w-[469px] placeholder:italic placeholder:text-dark">
+                <button class="px-[2.2rem] py-[0.7rem] ml-[0.4rem] bg-cream inline-block w-[14rem] shadow-[4px_4px_0px_0px] shadow-snow text-dark font-bold">Je m'inscris</button>
+            </div>
+        </form>
+        <div class="flex justify-between w-[17rem] my-[1.9rem] ml-[9rem]">
+            <p class="font-bold">Suivez nous</p>
+            <img src="assets/icones/insta.svg" alt="logo instagram">
+            <img src="assets/icones/facebook.svg" alt="logo facebook">
+            <img src="assets/icones/twitter.svg" alt="logo twitter">
+        </div>
+        <div class="px-[9rem]">
+            <button class="bg-snow text-dark py-[1.1rem] px-[1.1rem] mb-[1px] w-[72rem] flex justify-between items-center italic accordeon">Label <img src="assets/icones/plus.svg" alt="bouton plus" class="inline"></button>
+            <p class="bg-snow text-dark mt-[-1px] mb-[1px] hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus commodi modi, ipsum adipisci architecto veritatis aperiam quis. Natus ab tempora eius enim veritatis harum impedit at ex dolore doloribus?</p>
+            <button class="bg-snow text-dark py-[1.1rem] px-[1.1rem] mb-[1px] w-[72rem] flex justify-between items-center italic accordeon">Label <img src="assets/icones/plus.svg" alt="bouton plus" class="inline"></button>
+            <p class="bg-snow text-dark mt-[-1px] mb-[1px] hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus commodi modi, ipsum adipisci architecto veritatis aperiam quis. Natus ab tempora eius enim veritatis harum impedit at ex dolore doloribus?</p>
+            <button class="bg-snow text-dark py-[1.1rem] px-[1.1rem] mb-[1px] w-[72rem] flex justify-between items-center italic accordeon">Label <img src="assets/icones/plus.svg" alt="bouton plus" class="inline"></button>
+            <p class="bg-snow text-dark mt-[-1px] mb-[1px] hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus commodi modi, ipsum adipisci architecto veritatis aperiam quis. Natus ab tempora eius enim veritatis harum impedit at ex dolore doloribus?</p>
+            <button class="bg-snow text-dark py-[1.1rem] px-[1.1rem] mb-[2.9rem] w-[72rem] flex justify-between items-center italic accordeon">Label <img src="assets/icones/plus.svg" alt="bouton plus" class="inline"></button>
+            <p class="bg-snow text-dark mt-[-2.9rem] mb-[1px] hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus commodi modi, ipsum adipisci architecto veritatis aperiam quis. Natus ab tempora eius enim veritatis harum impedit at ex dolore doloribus?</p>
+        </div>
+        <p class="bg-cream text-center text-dark px-[9rem] py-[0.6rem]">© BeFestoch - 2023</p>
+    </footer>
+</body>
+</html>

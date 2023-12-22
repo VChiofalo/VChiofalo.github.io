@@ -1,0 +1,120 @@
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(11, 8, 1); 
+    width: 300px;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+header nav ul {
+    color: rgb(205, 195, 170);
+    text-decoration: none;
+}
+
+
+.bgImage{
+    color: rgb(205, 195, 170);
+    text-decoration: none;
+    background-image: url('../images/pexels-edward.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(205, 195, 170); 
+}
+
+.bg-cream {
+    background-color: #ECEBBD; 
+}
+
+.text-small {
+    font-size: 6px; 
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+
+header h1, header h2, main h2, footer h2, .nav-item {
+    
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+header h3, main h3, footer h3, header h4, main h4, footer h4, .date-large, .date-small, .button, .label, .body-regular, .body-bold    {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-size: 90px;
+}
+
+header h2, main h2, footer h2 {
+    font-size: 38px;
+}
+
+header h3, main h3, footer h3 {
+    font-weight: bold;
+    font-size: 30px; 
+}
+
+.date-large {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px; 
+}
+
+header h4, main h4, footer h4 {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.date-small {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.nav-item {
+
+    font-size: 24px;
+}
+
+.button {
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.label {
+
+    font-style: italic;
+    font-size: 20px;
+}
+
+.body-regular {
+
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.body-bold {
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header a, main a, footer a{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
